@@ -5,9 +5,11 @@
 </script>
 
 <template>
-    
+    <div class="container">
+       <router-view /> 
+    </div>
 
-    <router-view />
+    
 
     <!-- <Footer /> -->
   
@@ -15,4 +17,8 @@
 </template>
 
 <style scoped>
+.container{
+    width: 100%;
+    height: 100%;
+}
 </style>

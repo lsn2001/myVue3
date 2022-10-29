@@ -1,10 +1,8 @@
 <template>
     <div w-full flex justify-center items-center>
-        <Modal>
-            
-        </Modal>
         <Mask></Mask>
         <bgVideo></bgVideo>
+        <Modal></Modal>
         
     </div>
 </template>
