@@ -13,7 +13,6 @@ onMounted(() => {
     const timer1 = setInterval(() => {
         if (percentage.value < 100) {
             percentage.value = (percentage.value % 100) + 100
-            console.log(percentage.value)
         }
         if (percentage.value == 100) {
             clearInterval(timer1)

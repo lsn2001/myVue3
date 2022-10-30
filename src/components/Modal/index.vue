@@ -92,6 +92,7 @@ const openLink = (link: any) => {
     align-items: center;
     /* center代表水平方向 */
     justify-content: center;
+    font-family:Micro;
 
 }
 .textTip {
@@ -108,6 +109,7 @@ const openLink = (link: any) => {
 .login {
     font-size: 25px;
     cursor: pointer;
+    font-family: Vermin;
 
 }
 .userAvatar {
