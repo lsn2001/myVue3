@@ -7,6 +7,14 @@ import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 // https://vitejs.dev/config/
 export default defineConfig({
+  // scss全局变量需要全局导入
+  css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `@import "~/style/mixin.scss";`
+			}
+		}
+	},
   plugins: [
     vue(),
     AutoImport({

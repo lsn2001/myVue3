@@ -50,18 +50,7 @@ const openLink = (link: any) => {
     window.open(link, '_self')
 }
 </script>
-<style scoped>
-.el-button-large {
-    width: 100px;
-    height: 40px;
-    font-size: 16px;
-    margin-top: 10px;
-}
-.el-input-large {
-    height: 35px;
-    font-size: 20px;
-    margin: 10px 0;
-}
+<style lang="scss" scoped>
 .container {
     width: 900px;
     height: 500px;
@@ -76,44 +65,51 @@ const openLink = (link: any) => {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.Modal {
-    width: 50%;
-    height: 400px;
-    position: fixed;
-
-}
-.direction {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    /* co1umn 从上到下*/
-    align-items: center;
-    /* center代表水平方向 */
-    justify-content: center;
-    font-family:Micro;
-
-}
-.textTip {
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.greeting {
-    width: 100%;
-    word-break: break-all;
-    font-size: 25px;
-}
-.login {
-    font-size: 25px;
-    cursor: pointer;
-    font-family: Vermin;
-
-}
-.userAvatar {
-    width: 100%;
-    margin-top: 20px;
+    .Modal {
+        width: 50%;
+        height: 400px;
+        position: fixed;
+        .direction {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            /* co1umn 从上到下*/
+            align-items: center;
+            /* center代表水平方向 */
+            justify-content: center;
+            font-family: Micro;
+            .greeting {
+                width: 100%;
+                word-break: break-all;
+                font-size: 25px;
+            }
+            .login {
+                font-size: 25px;
+                cursor: pointer;
+                font-family: Vermin;
+            }
+            .userAvatar {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+        .textTip {
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .el-button-large {
+            width: 100px;
+            height: 40px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .el-input-large {
+            height: 35px;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+    }
 }
 </style>
